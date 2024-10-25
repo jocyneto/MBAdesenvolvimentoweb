@@ -1,0 +1,88 @@
+body {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #222831;
+  padding: 2rem;
+  width: 100%;
+}
+
+header nav ul {
+  justify-content: center;
+  display: flex;
+}
+
+header nav ul li:hover {
+  font-weight: bolder;
+}
+
+header nav ul li a {
+  margin: 0 0.5rem;
+  color: #00adb5;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+main {
+  background-color: #393e46;
+  padding: 1.2rem 1.7rem 1.2rem 1.7rem;
+  color: #eeeeee;
+  height: 100%;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+section p {
+  width: 100%;
+  margin: 0 0 0.5rem 0;
+}
+
+section p strong {
+  margin: 0.2rem 0 0 0;
+  font-weight: bold;
+}
+
+.empresas {
+  margin: 1%;
+  height: 100%;
+}
+
+.empresas__lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.empresas_item {
+  max-width: 30rem;
+  text-align: center;
+  padding: 0.7rem;
+  margin: 1rem;
+  border: 1px solid #ccc;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 0 5px #00adb5;
+}
+
+img {
+  width: 45%;
+}
+
+footer {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #222831;
+}
+
+footer p {
+  color: #00adb5;
+  justify-content: center;
+  display: flex;
+}
