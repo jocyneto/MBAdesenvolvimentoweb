@@ -75,23 +75,19 @@ function exibirPokemons(listaDePokemons) {
 }
 
 function capturarPokemon(pokemon) {
-    elementoParaInserir.innerHTML += `
-             <li class="pokemons__item">
-                        <div class="pokemons__content">
-                            <img src="${
-                                pokemon.sprites.front_default
-                            }" alt="Imagem de celular">
-                            <div class="pokemons__informacoes">
-                                <h3>${pokeNome(pokemon.name)}</h3>
-                                <p>Tipo(s): ${getPokeTipos(pokemon.types)}
-                                </p>
-                                <h4>Peso: ${parseInt(
-                                    pokemon.weight * 0.453592
-                                )} Kg</h4>
-                            </div>
-                        </div>
-                    </li>
-            `;
+    elementoParaInserir.innerHTML =
+        `
+    <li class="pokemons__item">
+        <div class="pokemons__content">
+            <img src="${pokemon.sprites.front_default}" alt="Imagem de celular">
+            <div class="pokemons__informacoes">
+                <h3>${pokeNome(pokemon.name)}</h3>
+                <p>Tipo(s): ${getPokeTipos(pokemon.types)}</p>
+                <h4>Peso: ${parseInt(pokemon.weight * 0.453592)} Kg</h4>
+            </div>
+        </div>
+    </li>
+` + elementoParaInserir.innerHTML;
 }
 
 function getPokeTipos(listaDeTipos) {
