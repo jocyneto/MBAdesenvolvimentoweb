@@ -1,5 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #ffcfb3;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 1rem;
+    background-color: #fff5cd;
+    border-radius: 1.5rem;
+    border: 1px solid #e78f81;
+}
+
+.icone__busca {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.buscar__pokemon {
+    padding: 0.7rem;
+    border-radius: 4.4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-color: #b7e0ff;
+    background-color: #b7e0ff;
+    color: #333;
+    margin: 0 0 0 0.5rem;
+}
+
 header {
-    background-color: #333;
+    background-color: #e78f81;
     color: #fff;
     text-align: center;
     padding: 2rem 0;
@@ -26,31 +65,33 @@ h1 {
     text-align: center;
 }
 
-.produtos {
+.pokemons {
     margin: 2%;
 }
 
-.produtos__lista {
+.pokemons__lista {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.produtos__item {
+.pokemons__item {
     flex: 0 1 calc(30% - 1rem);
     max-width: 20rem;
     margin: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #e78f81;
     padding: 0.5rem;
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.6rem;
+    background-color: #fff5cd;
 }
 
-.produtos__item :hover {
+.pokemons__item :hover {
     cursor: pointer;
 }
 
-.produtos__content {
+.pokemons__content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,18 +101,21 @@ img {
     width: 100%;
 }
 
-.produtos__informacoes {
+.pokemons__informacoes {
     text-align: center;
+    margin: 1rem 0 1rem 0;
 }
 
-.produtos__informacoes h4 {
+.pokemons__informacoes p {
+    margin: 1.2rem 0 1.2rem 0;
+}
+
+.pokemons__informacoes h3 {
     font-size: 1.5rem;
 }
 
-.produtos__informacoes s {
-    font-size: 1rem;
-    color: red;
-    margin-left: 0.5rem;
+.pokemons__informacoes h4 {
+    font-size: 1.5rem;
 }
 
 footer {
@@ -82,7 +126,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-
 }
 
 footer p {
